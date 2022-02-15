@@ -19,9 +19,9 @@ Host 130.238.x.y
   # modify this to match the name of your key
   IdentityFile ~/.ssh/id_rsa
   # Spark master web GUI
-  LocalForward 8080 192.168.2.113:8080
+  LocalForward 8080 192.168.2.119:8080
   # HDFS namenode web gui
-  LocalForward 9870 192.168.2.113:9870
+  LocalForward 9870 192.168.2.119:9870
   # python notebook
   LocalForward 8888 localhost:8888
   # spark applications
