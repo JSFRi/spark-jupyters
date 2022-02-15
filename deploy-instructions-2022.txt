@@ -142,7 +142,8 @@ spark_session = SparkSession\
         .master("spark://192.168.2.119:7077") \
         .appName("your_application_name")\
         .config("spark.dynamicAllocation.enabled", True)\
-        .config("spark.shuffle.service.enabled", True)\
+        .config("spark.dynamicAllocation.shuffleTracking.enabled",True)\
+        .config("spark.shuffle.service.enabled", False)\
         .config("spark.dynamicAllocation.executorIdleTimeout","30s")\
         .config("spark.executor.cores",2)\
         .config("spark.driver.port",9998)\
