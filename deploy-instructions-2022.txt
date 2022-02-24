@@ -15,6 +15,7 @@ To do this, create or modify the file ~/.ssh/config on your local (laptop) compu
 Replace 130.238.x.y and ~/.ssh/id_rsa with your floating IP and key path appropriately:
 
 Host 130.238.x.y
+KexAlgorithms +diffie-hellman-group1-sha1
   User ubuntu
   # modify this to match the name of your key
   IdentityFile ~/.ssh/id_rsa
