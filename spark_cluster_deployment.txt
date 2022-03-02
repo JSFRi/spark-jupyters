@@ -70,7 +70,7 @@ for i in {1..255}; do echo "192.168.1.$i host-192-168-1-$i-de1| sudo tee -a /etc
 for i in {1..255}; do echo "192.168.2.$i host-192-168-2-$i-de1| sudo tee -a /etc/hosts; done
 
 # set the hostname according to the scheme above:
-sudo hostname host-$(hostname -I | awk '{$1=$1};1' | sed 's/\./-/'g)-ldsa ; hostname
+sudo hostname host-$(hostname -I | awk '{$1=$1};1' | sed 's/\./-/'g)-de1 ; hostname
 
 # change the /etc/hostname file to the host name you get from last command (in the form of host-192-168-x-xxx-de1)
 
