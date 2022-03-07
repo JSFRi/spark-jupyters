@@ -99,7 +99,7 @@ https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCl
 https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/ClusterSetup.html
 
 # Now we can use HDFS to copy files in and out of the storage cluster for use with Spark:
-# The namenode host can be set in the config file core-site.yml, or as here, directly on the command line. (use your ip address instead)
+# The namenode host can be set in the config file core-site.xml, or as here, directly on the command line. (use your ip address instead)
 ~/hadoop-3.3.0/bin/hdfs dfs -Dfs.defaultFS="hdfs://192.168.2.119:9000" -ls /
 
 # Notes
