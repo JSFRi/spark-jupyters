@@ -165,7 +165,7 @@ sudo apt-get install -y python3-pip
 #python3 -m pip --version
 
 # install pyspark (the matching version as the cluster), and some other useful deps
-python3 -m pip install pyspark==3.2.0 --user
+python3 -m pip install pyspark==3.2.1 --user
 python3 -m pip install pandas --user
 python3 -m pip install matplotlib --user
 
